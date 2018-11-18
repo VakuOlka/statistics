@@ -10,7 +10,7 @@ import glob
 data = np.genfromtxt("00709analyzed.txt", 
                      delimiter=",", 
                      skip_header=1, 
-                     usecols=(4, 6, 7)) #use length, speed, RD, DP and DI columns from initial file.
+                     usecols=(0, 4, 6, 7)) #use length, speed, RD, DP and DI columns from initial file.
 #print (data)
 #a = np.array([data])
 rd = data[:, [1]]
